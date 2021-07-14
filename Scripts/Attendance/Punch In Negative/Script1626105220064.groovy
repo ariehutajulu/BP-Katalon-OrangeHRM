@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import groovy.json.JsonSlurper as JsonSlurper
 
-response = WS.sendRequest(findTestObject('API/Admin/Get Users', [('baseurl') : GlobalVariable.baseURL,('tokenaut') : GlobalVariable.tokenaut]))
+response = WS.sendRequest(findTestObject('API/Admin/Get Users', [('baseurl') : GlobalVariable.baseURL, ('tokenaut') : GlobalVariable.tokenaut]))
 
 def jsonSlurper = new JsonSlurper()
 
@@ -35,29 +35,31 @@ GlobalVariable.idP = IDemployee
 WS.delay(2)
 
 'Already punch in'
-responseBaru = WS.sendRequest(findTestObject('API/Attendance/Punch In', [('baseurl') : GlobalVariable.baseURL,('tokenaut') : GlobalVariable.tokenaut, ('id') : GlobalVariable.idP, ('timezone') : GlobalVariable.timezone, ('notePI') : GlobalVariable.notePI
-	, ('datetime') : GlobalVariable.datetime]))
+responseBaru = WS.sendRequest(findTestObject('API/Attendance/Punch In', [('baseurl') : GlobalVariable.baseURL, ('tokenaut') : GlobalVariable.tokenaut
+            , ('id') : GlobalVariable.idP, ('timezone') : GlobalVariable.timezone, ('notePI') : GlobalVariable.notePI, ('datetime') : GlobalVariable.datetime]))
+
 WS.delay(2)
 
-responseBaru = WS.sendRequest(findTestObject('API/Attendance/Punch In', [('baseurl') : GlobalVariable.baseURL,('tokenaut') : GlobalVariable.tokenaut, ('id') : GlobalVariable.idP
-			, ('timezone') : GlobalVariable.timezone, ('notePI') : GlobalVariable.notePI, ('datetime') : GlobalVariable.datetime]))
+responseBaru = WS.sendRequest(findTestObject('API/Attendance/Punch In', [('baseurl') : GlobalVariable.baseURL, ('tokenaut') : GlobalVariable.tokenaut
+            , ('id') : GlobalVariable.idP, ('timezone') : GlobalVariable.timezone, ('notePI') : GlobalVariable.notePI, ('datetime') : GlobalVariable.datetime]))
 
 WS.verifyResponseStatusCode(responseBaru, 202)
+
 WS.verifyElementPropertyValue(responseBaru, 'error.text', 'Cannot Proceed Punch In Employee Already Punched In')
 
-
 'wrong datetime format'
-responseBaru = WS.sendRequest(findTestObject('API/Attendance/Punch In', [('baseurl') : GlobalVariable.baseURL,('tokenaut') : GlobalVariable.tokenaut, ('id') : GlobalVariable.idP
-            , ('timezone') : GlobalVariable.timezone, ('notePI') : GlobalVariable.notePI, ('datetime') : '2020']))
+responseBaru = WS.sendRequest(findTestObject('API/Attendance/Punch In', [('baseurl') : GlobalVariable.baseURL, ('tokenaut') : GlobalVariable.tokenaut
+            , ('id') : GlobalVariable.idP, ('timezone') : GlobalVariable.timezone, ('notePI') : GlobalVariable.notePI, ('datetime') : '2020']))
 
 WS.verifyResponseStatusCode(responseBaru, 202)
-WS.verifyElementPropertyValue(responseBaru, 'error.text', 'datetime must be a valid date. Sample format: \"2005-12-30 01:02\"')
+
+WS.verifyElementPropertyValue(responseBaru, 'error.text', 'datetime must be a valid date. Sample format: "2005-12-30 01:02"')
+
 WS.delay(2)
 
-
 'invalid note punch in'
-responseBaru = WS.sendRequest(findTestObject('API/Attendance/Punch In', [('baseurl') : GlobalVariable.baseURL,('tokenaut') : GlobalVariable.tokenaut, ('id') : GlobalVariable.idP
-            , ('timezone') : GlobalVariable.timezone, ('notePI') : '', ('datetime') : GlobalVariable.datetime]))
+responseBaru = WS.sendRequest(findTestObject('API/Attendance/Punch In', [('baseurl') : GlobalVariable.baseURL, ('tokenaut') : GlobalVariable.tokenaut
+            , ('id') : GlobalVariable.idP, ('timezone') : GlobalVariable.timezone, ('notePI') : '', ('datetime') : GlobalVariable.datetime]))
 
 WS.verifyResponseStatusCode(responseBaru, 202)
 
