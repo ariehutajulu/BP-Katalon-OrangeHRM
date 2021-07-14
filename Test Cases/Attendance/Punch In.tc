@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test case request Punch In</description>
+   <name>Punch In</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5ab3d148-248f-401e-98dd-269ed156c680</testCaseGuid>
+</TestCaseEntity>

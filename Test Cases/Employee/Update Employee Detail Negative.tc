@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test case to check request Update Detail with invalid data</description>
+   <name>Update Employee Detail Negative</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dc4dbbe5-bef8-45a3-bba7-8d777de44362</testCaseGuid>
+</TestCaseEntity>

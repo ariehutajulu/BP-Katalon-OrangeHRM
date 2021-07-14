@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check request Get Organizations</description>
+   <name>Get Organizations</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ddf4e6e3-0e83-4a61-92e2-67da22e6e103</testCaseGuid>
+</TestCaseEntity>

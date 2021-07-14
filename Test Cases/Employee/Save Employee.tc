@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test case save employee</description>
+   <name>Save Employee</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aa9a81e8-ad50-4ac9-af18-c39a075423aa</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test case to see detail of Employee detail</description>
+   <name>Employee Detail</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5dfc14a9-cb52-479a-b7ca-fa4c03e8a40c</testCaseGuid>
+</TestCaseEntity>

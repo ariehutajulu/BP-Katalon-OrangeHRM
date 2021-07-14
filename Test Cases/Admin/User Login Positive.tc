@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test case to Check Login with valid password and username</description>
+   <name>User Login Positive</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cb9a99c9-4199-4d5b-bcc8-b647cc21b4a1</testCaseGuid>
+</TestCaseEntity>

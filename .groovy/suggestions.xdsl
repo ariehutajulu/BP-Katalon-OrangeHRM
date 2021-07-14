@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<projectSuggestions>
+<declaringtype type="JsonSlurper">
+<method isActive="true" isStatic="false" name="parseText" type="java.lang.Object">
+<parameters useNamedArguments="false"/>
+<doc/>
+</method>
+</declaringtype>
+<declaringtype type="com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords">
+<method isActive="true" isStatic="false" name="sendRequest" type="java.lang.Object">
+<parameters useNamedArguments="false"/>
+<doc/>
+</method>
+</declaringtype>
+<declaringtype type="java.lang.Object">
+<method isActive="true" isStatic="false" name="getResponseText" type="java.lang.Object">
+<parameters useNamedArguments="false"/>
+<doc/>
+</method>
+</declaringtype>
+</projectSuggestions>

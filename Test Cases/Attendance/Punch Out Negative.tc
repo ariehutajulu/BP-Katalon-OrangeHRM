@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Tesc case to Punch out with invalid data input</description>
+   <name>Punch Out Negative</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d7e9f959-6d23-465e-843b-49cf000b6cc3</testCaseGuid>
+</TestCaseEntity>

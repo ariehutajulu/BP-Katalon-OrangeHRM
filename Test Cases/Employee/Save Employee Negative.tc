@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test case Save Employee with invalid data input</description>
+   <name>Save Employee Negative</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f9ed7214-c851-4ac9-a4a2-30cf3782e660</testCaseGuid>
+</TestCaseEntity>
