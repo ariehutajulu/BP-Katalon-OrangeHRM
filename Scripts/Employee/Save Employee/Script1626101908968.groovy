@@ -32,7 +32,8 @@ println(IDemployee)
 
 GlobalVariable.idP = IDemployee
 
-
+int code = Math.abs(new Random().nextInt() % 600 + 1)
+GlobalVariable.code = code
 WS.delay(2)
 
 responseBaru = WS.sendRequest(findTestObject('API/Employee/Save Employee', [('baseurl') : GlobalVariable.baseURL, ('id') : GlobalVariable.idP, ('tokenaut') : GlobalVariable.tokenaut, ('firstname') : GlobalVariable.firstName, ('middlename') : GlobalVariable.middleName
