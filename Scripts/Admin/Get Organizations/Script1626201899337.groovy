@@ -17,6 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-response = WS.sendRequest(findTestObject('API/Admin/Get Organizations', [('tokenaut') : GlobalVariable.tokenaut,('baseurl') : GlobalVariable.baseURL]))
+response = WS.sendRequest(findTestObject('API/Admin/Get Organizations', [('tokenaut') : GlobalVariable.tokenaut, ('baseurl') : GlobalVariable.baseURL]))
 
-WS.verifyElementPropertyValue(response, 'data.name', 'QA Cilsy')
+WS.verifyElementPropertyValue(response, 'data.name', 'Sekolah QA')
+
