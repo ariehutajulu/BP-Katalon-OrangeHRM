@@ -21,5 +21,5 @@ response = WS.sendRequest(findTestObject('API/Admin/Get Users', [('baseurl') : G
 
 WS.verifyResponseStatusCode(response, 200)
 
-WS.verifyElementPropertyValue(response, 'data[1].userRole', 'ESS')
+WS.verifyElementPropertyValue(response, 'data[0].userRole', 'Admin')
 
