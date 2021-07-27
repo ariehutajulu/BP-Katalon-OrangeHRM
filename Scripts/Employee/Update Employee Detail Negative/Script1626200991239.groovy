@@ -21,7 +21,7 @@ import groovy.json.JsonSlurper as JsonSlurper
 WS.delay(2)
 
 responseBaru = WS.sendRequest(findTestObject('API/Employee/Update Employee Detail', [('tokenaut') : GlobalVariable.tokenaut, ('baseurl') : GlobalVariable.baseURL
-            , ('id') : '11', ('firstname') : GlobalVariable.firstName, ('middlename') : GlobalVariable.middleName
+            , ('id') : '20001', ('firstname') : GlobalVariable.firstName, ('middlename') : GlobalVariable.middleName
             , ('lastname') : GlobalVariable.lastName, ('code') : GlobalVariable.code, ('dob') : GlobalVariable.dob, ('licensenumber') : GlobalVariable.licenseNumber
             , ('expired') : GlobalVariable.licenseExpDate, ('marital') : GlobalVariable.marital, ('gender') : GlobalVariable.gender
             , ('otherid') : GlobalVariable.otherid, ('nationality') : GlobalVariable.nationality]))

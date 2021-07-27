@@ -75,10 +75,10 @@ WS.delay(2)
 
 
 'invalid ID punch out'
-responseBaru = WS.sendRequest(findTestObject('API/Attendance/Punch Out', [('baseurl') : GlobalVariable.baseURL,('tokenaut') : GlobalVariable.tokenaut, ('id') : '08'
+responseBaru = WS.sendRequest(findTestObject('API/Attendance/Punch Out', [('baseurl') : GlobalVariable.baseURL,('tokenaut') : GlobalVariable.tokenaut, ('id') : '20001'
 			, ('timezone') : GlobalVariable.timezone, ('note') : 'Punch Out sukses', ('datetime') : GlobalVariable.datetime]))
 
 WS.verifyResponseStatusCode(responseBaru, 404)
 
-WS.verifyElementPropertyValue(responseBaru, 'error.text', 'Employee id 08 Not Found')
+WS.verifyElementPropertyValue(responseBaru, 'error.text', 'Employee id 20001 Not Found')
 
